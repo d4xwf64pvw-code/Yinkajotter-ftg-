@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yinkajotter ftg</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Yinkajotter ftg</h1>
+
+    <div id="topbar">
+      <div id="scoreboard">
+        <span id="leftScore">0</span>
+        <span class="divider">—</span>
+        <span id="rightScore">0</span>
+      </div>
+
+      <div id="settings">
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="normal">Normal</option>
+          <option value="hard">Hard</option>
+          <option value="impossible">Impossible</option>
+        </select>
+
+        <label class="toggle">
+          <input id="soundToggle" type="checkbox" checked />
+          <span>Sound</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="gamewrap">
+      <canvas id="game" width="900" height="520" tabindex="0"></canvas>
+
+      <!-- Mobile controls -->
+      <div id="mobileControls" aria-hidden="true">
+        <button id="btnUp" class="touch-btn">▲</button>
+        <button id="btnDown" class="touch-btn">▼</button>
+      </div>
+    </div>
+
+    <div class="controls">Use mouse or Up / Down arrow keys to move the left paddle. On mobile drag paddle or use the buttons.</div>
+    <div class="credits">Made with ❤️ — Yinkajotter ftg</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
